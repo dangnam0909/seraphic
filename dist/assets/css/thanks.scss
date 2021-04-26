@@ -1,0 +1,38 @@
+#thanks {
+    min-height: calc(100vh - 218px);
+    #section__thanks {
+        padding: 60px 0;
+
+        p.btn {
+            margin-top: 5rem;
+            a{
+                display: inline-block;
+                text-align: center;
+                color: #111111;
+                background-color: #EEEEEE;
+                padding: .625em 1.825em;
+                border: solid 1px #EEEEEE;
+                border-radius: 2px;
+                font-size: 1em;
+                transition: ease-out 0.3s;
+                &:hover{
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    #thanks {
+        min-height: calc(100vh - 239px);
+        #section__thanks {
+            .s-title{
+                font-size: 2.6rem;
+                text-align: center;
+                margin-bottom: 60px;
+            }
+        }
+    }
+}

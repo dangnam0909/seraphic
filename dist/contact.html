@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>お問い合わせ | セラフィック株式会社</title>
+	<meta name="description" content="“ココロとカラダ”にいつも心地よくいられるモノを">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="セラフィック株式会社">
+	<meta property="og:description" content="“ココロとカラダ”にいつも心地よくいられるモノを">
+	<meta property="og:url" content="https://seraphic.co.jp/">
+	<meta property="og:site_name" content="セラフィック株式会社">
+	<meta property="og:image" content="https://seraphic.co.jp/assets/img/ogp.jpg">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:locale" content="ja_JP">
+	<meta property="fb:app_id" content="">
+	<meta name="twitter:image" content="https://seraphic.co.jp/assets/img/ogp.jpg">
+	<meta name="twitter:card" content="summary_large_image">
+	<link rel="stylesheet" href="/assets/css/style.css">
+	<link rel="stylesheet" href="/assets/css/contact.css">
+	<link rel="shortcut icon" href="https://seraphic.co.jp/favicon.ico">
+	<link rel="icon" href="/assets/img/favicon.png" sizes="512x512">
+	<link rel="apple-touch-icon-precomposed" href="/assets/img/favicon.png">
+	<meta name="msapplication-TileImage" content="/assets/img/favicon.png">
+</head>
+
+<body>
+
+<header>
+	<a href="/" title="SERAPHIC">
+		<h1>SERAPHIC</h1>
+	</a>
+	<nav>
+		<ul>
+			<li class="hide-pc"><a href="/" title="HOME">HOME</a></li>
+			<li><a href="/product" title="PRODUCTS">PRODUCTS</a></li>
+			<li><a href="/business" title="BUSINESS">BUSINESS</a></li>
+			<li><a href="/company" title="COMPANY">COMPANY</a></li>
+			<li><a href="/contact" title="CONTACT">CONTACT</a></li>
+		</ul>
+		<ul class="header__sns hide-pc">
+			<li><a href="https://www.facebook.com/cocokara.sera/" title="Facebook" target="_blank">FACEBOOK</a></li>
+			<li><a href="https://twitter.com/INFOseraphic/" title="Twitter" target="_blank">TWITTER</a></li>
+			<li><a href="https://www.instagram.com/seraphicpromotion/" title="Instagram" target="_blank">INSTAGRAM</a></li>
+		</ul>
+	</nav>
+</header>
+
+<main id="contact">
+	<section id="sectionContact">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-sm-4">
+					<h2 class="s-title">
+						お問い合わせ
+					</h2>
+				</div>
+				<div class="col-12 col-sm-8">
+					<p>以下の内容をご記入いただき、送信ボタンをクリック<wbr>してください。</p>
+					<form action="/thanks" id="form" name="form" method="POST" data-netlify="true"
+						data-netlify-recaptcha="true" netlify-honeypot="bot-field">
+						<p class="hide"><label>Don’t fill this out if you're human: <input name="bot-field"></label>
+						</p>
+						<dl>
+							<dt class="need"><label for="name">お名前</label></dt>
+							<dd><input type="text" id="name" name="お名前" required></dd>
+							<dt><label for="company">会社名</label></dt>
+							<dd><input type="text" id="company" name="会社名"></dd>
+							<dt class="need"><label for="email">メールアドレス</label></dt>
+							<dd><input type="email" id="email" name="メールアドレス" required></dd>
+							<dt class="confirm"><label for="email_confirmation">メールアドレス</label></dt>
+							<dd>
+								<input type="email" id="email_confirmation">
+								<small>
+									※キャリアメール（au,docomoなど）以外でお願いします。キャリアメールですと、うまく返信ができない場合がございます。何かしらの理由でメールが返信できない場合は、お電話させていただきますので、予めご了承ください。
+								</small>
+							</dd>
+							<dt class="need"><label for="tel">電話番号</label></dt>
+							<dd><input type="tel" id="tel" name="電話番号" required></dd>
+							<dt><label for="subject">件名</label></dt>
+							<dd><input type="text" id="subject" name="件名"></dd>
+							<dt class="need"><label for="message">お問い合わせ内容</label></dt>
+							<dd><textarea id="message" name="お問い合わせ内容" cols="30" rows="10" required></textarea></dd>
+						</dl>
+						<div data-netlify-recaptcha="true"></div>
+						<p class="note">
+							法人営業のお問い合わせはこちらではご返信出来兼ねます。
+							商品取り扱いの希望やOEＭのご相談などはお電話にてご連絡いただけましたら担当者とお繋ぎ致します。
+						</p>
+						<p class="btn"><a href="/thanks" title="送信">送 信</a></p>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+
+<footer>
+	<a href="/" class="footer_logo" title="Seraphic"><span>Seraphic</span></a>
+	<small class="copyright">&copy; <span class="year"></span> Seraphic Co., Ltd</small>
+	<div class="footer-right">
+		<small><a href="/privacy" title="Privacy policy" class="privacy">PRIVACY POLICY</a></small>
+		<div class="footer_sns hide-sp">
+			<a href="https://twitter.com/INFOseraphic/" target="_blank" title="Twitter" class="tw">Twitter</a>
+			<a href="https://www.facebook.com/cocokara.sera/" target="_blank" title="Facebook" class="fb">Facebook</a>
+			<a href="https://www.instagram.com/seraphicpromotion/" target="_blank" title="Instagram" class="insta">Instagram</a>
+		</div>
+	</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="/assets/js/Element.js"></script>
+<script src="/assets/js/String.js"></script>
+<script src="/assets/js/init.js"></script>
+<script src="/assets/js/func.js"></script>
+<script src="/assets/js/main.js"></script>
+<script src="/assets/js/custom.js"></script>
+
+</body>
+</html>

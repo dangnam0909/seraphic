@@ -1,0 +1,102 @@
+#contact {
+    #sectionContact {
+        padding: 60px 0;
+
+        p {
+            // white-space: nowrap;
+        }
+
+        .note{
+            margin-top: 25px;
+        }
+
+        form dl {
+            padding: 40px 0 25px 0;
+        }
+
+        form dl dt {
+            padding-bottom: 10px;
+            text-align: left;
+        }
+
+        form dl dt.need::after {
+            content: "\FF08\5FC5\9808\FF09";
+            color: #e83737;
+        }
+
+        form dl dt.confirm::after {
+            content: "\FF08\78BA\8A8D\7528\FF09";
+            color: #e83737;
+        }
+
+        form dl dd:not(:last-of-type) {
+            padding-bottom: 20px;
+        }
+
+        form dl dd input,
+        form dl dd textarea {
+            background-color: #EEEEEE;
+            border: 1px solid transparent;
+            border-radius: 2px;
+            padding: 8px 15px;
+            width: 100%;
+            outline: none;
+
+            &:focus {
+                border-color: #0F4472;
+            }
+        }
+
+        form dl dd textarea {
+            height: 9.0em;
+            resize: vertical;
+        }
+
+        form div {
+            display: flex;
+            // justify-content: center;
+        }
+
+        form p.btn,
+        main#thanks p.btn {
+            margin-top: 25px;
+            display: block;
+        }
+
+        form p.btn a,
+        main#thanks p.btn a {
+            display: inline-block;
+            text-align: center;
+            color: #fff;
+            background-color: #0F4472;
+            padding: .625em 1.825em;
+            border: solid 1px #0F4472;
+            border-radius: 2px;
+            font-size: 1em;
+            transition: ease-out 0.3s;
+            &:hover{
+                opacity: 0.8;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #contact {
+        #sectionContact {
+            .s-title {
+                font-size: 2.6rem;
+                text-align: center;
+                margin-bottom: 60px;
+            }
+
+            p {
+                text-align: center;
+            }
+            
+            form div {
+                justify-content: center;
+            }
+        }
+    }
+}

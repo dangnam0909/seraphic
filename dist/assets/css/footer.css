@@ -1,0 +1,97 @@
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F4F4F4;
+    padding: 20px 40px;
+}
+
+footer small {
+    display: block;
+    color: #2E2E2E;
+    text-align: center;
+}
+
+footer small a {
+    display: inline-block;
+    color: #2E2E2E;
+}
+
+footer .footer_logo {
+    display: inline-block;
+}
+
+footer .footer_logo span {
+    display: inline-block;
+    background: url(../img/logo.svg) 50% 50% no-repeat;
+    background-size: contain;
+    width: 245px;
+    height: 60px;
+    text-indent: -9999em;
+    transition: all .5s;
+}
+
+footer .footer-right {
+    display: flex;
+    align-items: center;
+}
+
+footer .footer-right .privacy {
+    font-size: 1.6rem;
+}
+
+footer .footer-right .footer_sns {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+}
+
+footer .footer-right .footer_sns a {
+    display: inline-block;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 38px;
+    height: 38px;
+    text-indent: -9999em;
+}
+
+footer .footer-right .footer_sns a.fb {
+    background-image: url(../img/facebook.svg);
+    margin-right: 15px;
+}
+
+footer .footer-right .footer_sns a.tw {
+    background-image: url(../img/twitter.svg);
+    margin-right: 15px;
+}
+
+footer .footer-right .footer_sns a.insta {
+    background-image: url(../img/instagram.png);
+}
+
+@media screen and (max-width: 767px) {
+    footer {
+        flex-wrap: wrap;
+        padding: 20px 20px;
+    }
+
+    footer .footer_logo {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    footer .footer-right {
+        order: 2;
+        padding-left: 10px;
+    }
+
+    footer .footer-right .privacy {
+        font-size: 1.4rem;
+    }
+
+    footer .copyright {
+        order: 3;
+    }
+}

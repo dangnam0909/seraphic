@@ -1,0 +1,110 @@
+#business p {
+  margin-bottom: 2rem;
+}
+
+#business h3 {
+  margin-bottom: 2rem;
+}
+
+#business #section__main {
+  background-image: url("../img/business/seraphic_business.jpg");
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: cover;
+}
+
+#business #section__businessContent {
+  padding: 60px 0;
+  overflow-x: hidden;
+}
+
+#business #section__businessContent .brand {
+  margin-bottom: 70px;
+}
+
+#business #section__businessContent .brand figure {
+  margin-bottom: 20px;
+}
+
+#business #section__businessContent .brand p {
+  margin-bottom: 0;
+}
+
+#business #section__businessContent .brand.-oem {
+  position: relative;
+  padding: 40px 0;
+}
+
+#business #section__businessContent .brand.-oem::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(138, 186, 204, 0.2);
+  left: -500%;
+  right: -500%;
+  width: calc(100% + 1000%);
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+#business #section__businessContent .brand.-oem a {
+  text-decoration: underline;
+  color: #0F4472;
+}
+
+#business #section__businessContent .business__menu {
+  margin-top: 30px;
+}
+
+#business #section__businessContent .business__menu li {
+  margin-bottom: 25px;
+}
+
+#business #section__businessContent .business__menu li a {
+  color: #004472;
+}
+
+#business #section__businessContent .business__menu li a.active {
+  font-weight: 500;
+}
+
+#business #section__archievements {
+  padding: 60px 0;
+}
+
+#business #section__archievements .mask-68 {
+  display: inline-block;
+  position: relative;
+}
+
+#business #section__archievements .mask-68::after {
+  content: "";
+  position: absolute;
+  width: 167px;
+  height: 40px;
+  background-image: url(../img/business/good-design-red.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  right: -185px;
+  bottom: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  #business #section__archievements .mask-68 {
+    padding-bottom: 60px;
+  }
+  #business #section__archievements .mask-68::after {
+    width: 157px;
+    height: 37px;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #business #section__main {
+    background-position-x: 25%;
+  }
+}
+/*# sourceMappingURL=business.css.map */

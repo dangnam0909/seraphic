@@ -1,0 +1,62 @@
+#company #section__main {
+  background-image: url("../img/company/seraphic_company.jpg");
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: cover;
+}
+
+#company #section__companyProfile {
+  padding: 60px 0;
+}
+
+#company #section__companyProfile .company__info dl {
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#company #section__companyProfile .company__info dl dt {
+  width: 120px;
+  font-weight: 300;
+  padding: 20px 0 15px 0;
+  border-bottom: 1px solid #8ABACC;
+}
+
+#company #section__companyProfile .company__info dl dt:last-of-type {
+  border-bottom: none;
+}
+
+#company #section__companyProfile .company__info dl dd {
+  width: 75%;
+  width: calc(100% - 120px);
+  padding: 20px 0 15px;
+  border-bottom: 1px solid #8ABACC;
+}
+
+#company #section__companyProfile .company__info dl dd:last-of-type {
+  border-bottom: none;
+}
+
+#company #section__companyProfile .company__info .gg-map {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  #company #section__companyProfile .company__info dl dt {
+    width: 100px;
+  }
+  #company #section__companyProfile .company__info dl dd {
+    width: calc(100% - 100px);
+  }
+  #company #section__companyProfile .company__info .gg-map {
+    margin-left: calc(-100px - 1em);
+    margin-right: -1em;
+    width: calc(100% + 100px + 2em);
+  }
+}
+/*# sourceMappingURL=company.css.map */

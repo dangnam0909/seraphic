@@ -1,0 +1,547 @@
+/* all tags style ------------------------------------------------------------------------------- */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* html style ----------------------------------------------------------------------------------- */
+html {
+    width: 100%;
+    font-size: 62.5%;
+    font-size: -webkit-calc(1em * 0.625);
+    font-size: -moz-calc(1em * 0.625);
+    font-size: calc(1em * 0.625);
+}
+
+/* body style ----------------------------------------------------------------------------------- */
+body {
+    position: relative;
+    width: 100%;
+    color: #333333;
+    font: normal normal 300 1.6rem/1.6 "Noto Sans JP", YuGothic, "Yu Gothic", "-apple-system", "BlinkMacSystemFont", ".SFNSDisplay-Regular", "Helvetica Neue", "Verdana", "Hiragino Sans", "メイリオ", "Hiragino Kaku Gothic ProN", sans-serif;
+    -webkit-text-size-adjust: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+body.noscroll {
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* regular anchor style ------------------------------------------------------------------------- */
+a {
+    color: #333333;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a.disable {
+    cursor: default;
+    pointer-events: none;
+}
+
+a:focus,
+a:hover {
+    text-decoration: none;
+    outline: 0px;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+/* each regular tags style ---------------------------------------------------------------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-style: normal;
+}
+
+h1 {
+    font-size: 3.2rem;
+}
+
+h2 {
+    font-size: 2.6rem;
+}
+
+h3 {
+    font-size: 2.0rem;
+}
+
+h4 {
+    font-size: 1.8rem;
+}
+
+h5 {
+    font-size: 1.6rem;
+}
+
+h6 {
+    font-size: 1.4rem;
+}
+
+small {
+    font-size: 0.8em;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+em,
+strong {
+    font-style: normal;
+    font-weight: bold;
+}
+
+address {
+    font-style: normal;
+}
+
+img {
+    background: transparent;
+    border: none;
+    pointer-events: none;
+}
+
+br {
+    clear: both;
+}
+
+hr {
+    clear: both;
+    border: none;
+    padding: 10px 0px;
+}
+
+input,
+select,
+textarea,
+button {
+    line-height: inherit;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+input,
+textarea,
+button {
+    font-family: "Noto Sans JP", YuGothic, "Yu Gothic", "-apple-system", "BlinkMacSystemFont", ".SFNSDisplay-Regular", "Helvetica Neue", "Verdana", "Hiragino Sans", "メイリオ", "Hiragino Kaku Gothic ProN", sans-serif;
+}
+
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+button {
+    cursor: pointer;
+}
+
+input[type="button"]:not(:target) {
+    filter: none\9;
+}
+
+input[type="reset"]:not(:target) {
+    filter: none\9;
+}
+
+input[type="submit"]:not(:target) {
+    filter: none\9;
+}
+
+button:not(:target) {
+    filter: none\9;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-0 {
+    width: 0;
+    max-width: 0;
+}
+
+/*Mobile*/
+.col-1 {
+    width: 100%;
+    padding: 0 .5em;
+    flex: 0 0 100%;
+    max-width: calc(100% / 12 * 1);
+}
+
+.col-2 {
+    width: 100%;
+    padding: 0 .5em;
+    flex: 0 0 100%;
+    max-width: calc(100% / 12 * 2);
+}
+
+.col-3 {
+    width: 100%;
+    padding: 0 .5em;
+    flex: 0 0 100%;
+    max-width: calc(100% / 12 * 3);
+}
+
+.col-4 {
+    width: 100%;
+    padding: 0 .5em;
+    flex: 0 0 100%;
+    max-width: calc(100% / 12 * 4);
+}
+
+.col-5 {
+    width: 100%;
+    padding: 0 .5em;
+    flex: 0 0 100%;
+    max-width: calc(100% / 12 * 5);
+}
+
+.col-6 {
+    width: 100%;
+    padding: 0 .5em;
+    flex: 0 0 100%;
+    max-width: calc(100% / 12 * 6);
+}
+
+.col-7 {
+    width: 100%;
+    padding: 0 .5em;
+    flex: 0 0 100%;
+    max-width: calc(100% / 12 * 7);
+}
+
+.col-8 {
+    width: 100%;
+    padding: 0 .5em;
+    flex: 0 0 100%;
+    max-width: calc(100% / 12 * 8);
+}
+
+.col-9 {
+    width: 100%;
+    padding: 0 .5em;
+    flex: 0 0 100%;
+    max-width: calc(100% / 12 * 9);
+}
+
+.col-10 {
+    width: 100%;
+    padding: 0 .5em;
+    flex: 0 0 100%;
+    max-width: calc(100% / 12 * 10);
+}
+
+.col-11 {
+    width: 100%;
+    padding: 0 .5em;
+    flex: 0 0 100%;
+    max-width: calc(100% / 12 * 11);
+}
+
+.col-12 {
+    width: 100%;
+    padding: 0 .5em;
+    flex: 0 0 100%;
+    max-width: calc(100% / 12 * 12);
+}
+
+.start-xs {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+.center-xs {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.end-xs {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+
+.around-xs {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+.between-xs {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+/*Model*/
+@media screen and (min-width: 768px) {
+    .col-sm-1 {
+        width: 100%;
+        padding: 0 .5em;
+        flex: 0 0 100%;
+        max-width: calc(100% / 12 * 1);
+    }
+
+    .col-sm-2 {
+        width: 100%;
+        padding: 0 .5em;
+        flex: 0 0 100%;
+        max-width: calc(100% / 12 * 2);
+    }
+
+    .col-sm-3 {
+        width: 100%;
+        padding: 0 .5em;
+        flex: 0 0 100%;
+        max-width: calc(100% / 12 * 3);
+    }
+
+    .col-sm-4 {
+        width: 100%;
+        padding: 0 .5em;
+        flex: 0 0 100%;
+        max-width: calc(100% / 12 * 4);
+    }
+
+    .col-sm-5 {
+        width: 100%;
+        padding: 0 .5em;
+        flex: 0 0 100%;
+        max-width: calc(100% / 12 * 5);
+    }
+
+    .col-sm-6 {
+        width: 100%;
+        padding: 0 .5em;
+        flex: 0 0 100%;
+        max-width: calc(100% / 12 * 6);
+    }
+
+    .col-sm-7 {
+        width: 100%;
+        padding: 0 .5em;
+        flex: 0 0 100%;
+        max-width: calc(100% / 12 * 7);
+    }
+
+    .col-sm-8 {
+        width: 100%;
+        padding: 0 .5em;
+        flex: 0 0 100%;
+        max-width: calc(100% / 12 * 8);
+    }
+
+    .col-sm-9 {
+        width: 100%;
+        padding: 0 .5em;
+        flex: 0 0 100%;
+        max-width: calc(100% / 12 * 9);
+    }
+
+    .col-sm-10 {
+        width: 100%;
+        padding: 0 .5em;
+        flex: 0 0 100%;
+        max-width: calc(100% / 12 * 10);
+    }
+
+    .col-sm-11 {
+        width: 100%;
+        padding: 0 .5em;
+        flex: 0 0 100%;
+        max-width: calc(100% / 12 * 11);
+    }
+
+    .col-sm-12 {
+        width: 100%;
+        padding: 0 .5em;
+        flex: 0 0 100%;
+        max-width: calc(100% / 12 * 12);
+    }
+}
+
+/*Tablet*/
+@media screen and (min-width: 1024px) {
+    .col-md-1 {
+        width: 100%;
+        padding: 0 .5em;
+        flex: 0 0 100%;
+        max-width: calc(100% / 12 * 1);
+    }
+
+    .col-md-2 {
+        width: 100%;
+        padding: 0 .5em;
+        flex: 0 0 100%;
+        max-width: calc(100% / 12 * 2);
+    }
+
+    .col-md-3 {
+        width: 100%;
+        padding: 0 .5em;
+        flex: 0 0 100%;
+        max-width: calc(100% / 12 * 3);
+    }
+
+    .col-md-4 {
+        width: 100%;
+        padding: 0 .5em;
+        flex: 0 0 100%;
+        max-width: calc(100% / 12 * 4);
+    }
+
+    .col-md-5 {
+        width: 100%;
+        padding: 0 .5em;
+        flex: 0 0 100%;
+        max-width: calc(100% / 12 * 5);
+    }
+
+    .col-md-6 {
+        width: 100%;
+        padding: 0 .5em;
+        flex: 0 0 100%;
+        max-width: calc(100% / 12 * 6);
+    }
+
+    .col-md-7 {
+        width: 100%;
+        padding: 0 .5em;
+        flex: 0 0 100%;
+        max-width: calc(100% / 12 * 7);
+    }
+
+    .col-md-8 {
+        width: 100%;
+        padding: 0 .5em;
+        flex: 0 0 100%;
+        max-width: calc(100% / 12 * 8);
+    }
+
+    .col-md-9 {
+        width: 100%;
+        padding: 0 .5em;
+        flex: 0 0 100%;
+        max-width: calc(100% / 12 * 9);
+    }
+
+    .col-md-10 {
+        width: 100%;
+        padding: 0 .5em;
+        flex: 0 0 100%;
+        max-width: calc(100% / 12 * 10);
+    }
+
+    .col-md-11 {
+        width: 100%;
+        padding: 0 .5em;
+        flex: 0 0 100%;
+        max-width: calc(100% / 12 * 11);
+    }
+
+    .col-md-12 {
+        width: 100%;
+        padding: 0 .5em;
+        flex: 0 0 100%;
+        max-width: calc(100% / 12 * 12);
+    }
+}
+
+/*Desktop*/
+@media screen and (min-width: 1280px) {
+    .col-lg-1 {
+        width: 100%;
+        padding: 0 .5em;
+        flex: 0 0 100%;
+        max-width: calc(100% / 12 * 1);
+    }
+
+    .col-lg-2 {
+        width: 100%;
+        padding: 0 .5em;
+        flex: 0 0 100%;
+        max-width: calc(100% / 12 * 2);
+    }
+
+    .col-lg-3 {
+        width: 100%;
+        padding: 0 .5em;
+        flex: 0 0 100%;
+        max-width: calc(100% / 12 * 3);
+    }
+
+    .col-lg-4 {
+        width: 100%;
+        padding: 0 .5em;
+        flex: 0 0 100%;
+        max-width: calc(100% / 12 * 4);
+    }
+
+    .col-lg-5 {
+        width: 100%;
+        padding: 0 .5em;
+        flex: 0 0 100%;
+        max-width: calc(100% / 12 * 5);
+    }
+
+    .col-lg-6 {
+        width: 100%;
+        padding: 0 .5em;
+        flex: 0 0 100%;
+        max-width: calc(100% / 12 * 6);
+    }
+
+    .col-lg-7 {
+        width: 100%;
+        padding: 0 .5em;
+        flex: 0 0 100%;
+        max-width: calc(100% / 12 * 7);
+    }
+
+    .col-lg-8 {
+        width: 100%;
+        padding: 0 .5em;
+        flex: 0 0 100%;
+        max-width: calc(100% / 12 * 8);
+    }
+
+    .col-lg-9 {
+        width: 100%;
+        padding: 0 .5em;
+        flex: 0 0 100%;
+        max-width: calc(100% / 12 * 9);
+    }
+
+    .col-lg-10 {
+        width: 100%;
+        padding: 0 .5em;
+        flex: 0 0 100%;
+        max-width: calc(100% / 12 * 10);
+    }
+
+    .col-lg-11 {
+        width: 100%;
+        padding: 0 .5em;
+        flex: 0 0 100%;
+        max-width: calc(100% / 12 * 11);
+    }
+
+    .col-lg-12 {
+        width: 100%;
+        padding: 0 .5em;
+        flex: 0 0 100%;
+        max-width: calc(100% / 12 * 12);
+    }
+}

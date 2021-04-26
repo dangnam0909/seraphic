@@ -1,0 +1,173 @@
+#product {
+    #section__main {
+        background-image: url('../img/product/seraphic_proudct.jpg');
+        min-height: 100vh;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 50px;
+        padding-top: 110px;
+        .content__main {
+            h2 {
+                font-weight: 300;
+                font-size: 2.8rem;
+            }
+
+            p {
+                margin-top: 3rem;
+            }
+        }
+    }
+
+    #section__product {}
+
+    .section__product {
+        // padding: 60px 0;
+
+        section {
+            position: relative;
+
+            &:not(:first-child) {}
+
+            padding-top: 60px;
+            padding-bottom: 60px;
+
+            &:not(:last-child) {
+                &::after {
+                    content: "";
+                    position: absolute;
+                    border-bottom: 1px solid #8ABACC;
+                    height: 1px;
+                    width: 98%;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    margin: auto;
+                }
+            }
+
+
+
+        }
+
+        &:nth-child(2n+1) {
+            background-color: #F1F0EA;
+
+            section {
+                &:not(:last-child) {
+                    &::after {
+
+                        border-bottom: 1px solid #ffffff;
+                    }
+                }
+            }
+        }
+
+        .product__menu {
+            margin-top: 30px;
+
+            li {
+                margin-bottom: 25px;
+
+                a {
+                    color: #004472;
+
+                    &.active {
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+
+        .product-slide {
+            margin-top: 80px;
+            margin-bottom: 35px;
+            margin-left: -0.5em;
+            margin-right: -0.5em;
+        }
+
+        a._link {
+            color: #004472;
+            transition: ease-out .3s;
+            text-decoration: underline;
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+        
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        color: #8AB2C1;
+        display: block;
+    }
+
+    .swiper-pagination {
+        bottom: 10px;
+        display: none;
+
+        .swiper-pagination-bullet {
+            background: #EEEEEE;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: #8AB2C1;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #product {
+        #section__main {
+            .content__main {
+                h2 {
+                    font-size: 2.6rem;
+                }
+
+            }
+        }
+
+        .section__product {
+            &:nth-child(2n+1) {
+                background-color: #F1F0EA;
+
+                .swiper-pagination-bullet {
+                    background: #ffffff;
+                }
+
+                .swiper-pagination-bullet-active {
+                    background: #8AB2C1;
+                }
+            }
+
+            .product-slide {
+                padding-bottom: 50px;
+                margin-top: 60px;
+            }
+
+            .product__menu {
+                li {
+                    a:not(.active) {
+                        display: none;
+                    }
+                }
+            }
+            .--new-link{
+                margin-top: 40px;
+            }
+        }
+
+        .swiper-pagination {
+            display: block;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            display: none;
+        }
+    }
+}
